@@ -1,0 +1,52 @@
+.todosContainer {
+  margin-bottom: 2rem;
+}
+
+.todoList {
+  margin-top: 0.5rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fire {
+  height: 1.5rem;
+  margin-right: 0.8rem;
+}
+
+.todoContainer {
+  padding: 1rem 1rem 1rem 1rem;
+  word-wrap: break-word;
+  background-image: linear-gradient(90deg, #8127bd, #da267b);
+  border-style: none;
+  outline: none;
+  display: flex;
+}
+
+.todoContent {
+  width: 15rem;
+  font-style: italic;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.todoBtns {
+  gap: 0.5rem;
+  display: flex;
+  .completeBtn,
+  .editBtn,
+  .removeBtn {
+    height: 1.3rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .todoContainer {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+}

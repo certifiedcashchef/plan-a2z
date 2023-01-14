@@ -1,0 +1,86 @@
+.backdrop {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(90deg, #15244e, #371747);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  z-index: 1500;
+  position: absolute;
+  height: 30rem;
+  width: 35rem;
+  border-radius: 2rem;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wavingHand {
+  width: 15rem;
+}
+
+.msg {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: italic;
+  position: relative;
+  width: 30em;
+  word-spacing: 0.1rem;
+  margin: 1.5rem 0rem 2rem 0rem;
+  text-align: center;
+}
+
+.crown {
+  height: 1.5rem;
+  position: absolute;
+  bottom: 0.25rem;
+  margin-left: 0.2rem;
+}
+
+.popupCloseBtn {
+  width: 20rem;
+  font-weight: 600;
+  background-color: #111111;
+  padding: 0.5rem;
+  border-style: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    background-image: linear-gradient(90deg, #8127bd, #da267b);
+  }
+}
+
+@media (max-width: 600px) {
+  .overlay {
+    height: 20rem;
+    width: 24rem;
+  }
+
+  .wavingHand {
+    width: 8rem;
+  }
+  .msg {
+    font-size: 0.8rem;
+    margin: 1.5rem 0rem 1.2rem 0rem;
+  }
+  .crown {
+    height: 1.1rem;
+  }
+  .popupCloseBtn {
+    width: 7.5rem;
+    padding: 0.5rem;
+  }
+}

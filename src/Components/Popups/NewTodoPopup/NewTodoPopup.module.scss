@@ -1,0 +1,80 @@
+.backdrop {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(90deg, #15244e, #371747, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  z-index: 1500;
+  position: absolute;
+  height: 20rem;
+  width: 30rem;
+  border-radius: 2rem;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.money {
+  width: 10rem;
+}
+
+.msg {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: italic;
+  position: relative;
+  width: 30em;
+  word-spacing: 0.1rem;
+  margin: 0.7rem 0rem 1rem 0rem;
+  padding: 0rem 3rem;
+  text-align: center;
+}
+
+.popupCloseBtn {
+  width: 5rem;
+  font-weight: 600;
+  background-image: linear-gradient(90deg, #8127bd, #da267b);
+  padding: 0.5rem;
+  border-style: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.alert {
+  color: #e43146;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .overlay {
+    height: 18rem;
+    width: 22rem;
+  }
+
+  .money {
+    width: 8rem;
+  }
+  .msg {
+    font-size: 0.8rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+  .popupCloseBtn {
+    width: 5rem;
+    padding: 0.5rem;
+  }
+}

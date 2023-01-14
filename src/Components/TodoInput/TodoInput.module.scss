@@ -1,0 +1,50 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.inputForm {
+  background-color: #111111;
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 3%;
+  color: #ffffff;
+  outline: none;
+  margin-right: 3rem;
+}
+
+.addBtn {
+  font-weight: 600;
+  background-color: #111111;
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 7%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    background-image: linear-gradient(90deg, #8127bd, #da267b);
+  }
+}
+
+.rocket {
+  width: 1.2rem;
+  margin-left: 0.3rem;
+}
+
+.clearBtns {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 600px) {
+  .clearBtns {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
